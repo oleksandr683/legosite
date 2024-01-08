@@ -1,0 +1,425 @@
+/* Start INDEX STYLES*/
+/* BODY STYLES*/
+body {
+    max-width: 1415px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* logo STYLE*/
+.brand-logo img {
+    max-width: 3rem;
+    margin-top: 0.5rem;
+}
+
+/* Title STYLE*/
+.title {
+    color: white;
+    background: rgb(0, 109, 183);
+    padding: 20px;
+}
+
+.title h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+}
+/* END Title STYLE*/
+
+/* NAV BAR STYLES*/
+nav {
+    background-color: rgb(255, 207, 0);
+}
+
+nav ul a {
+    color: black;
+}
+
+/* END NAV BAR STYLES*/
+
+/* FOOTER STYLES*/
+.page-footer {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+/* START social netwirks STYLE*/
+.social{
+    display: flex;
+}
+.social li{
+    margin-right: 10px;
+}
+.social li a{
+    font-size: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/sprite-icon-7.jpg);
+    background-repeat: no-repeat;
+    background-size: 310px 75px;
+    border-radius: 50%;
+}
+.social-1{
+    background-position: -8px -3px;
+}
+
+.social-2{
+    background-position: -95px -4px;
+}
+
+.social-3{
+    background-position: -139px -4px;
+}
+.social-4{
+    background-position: -52px -4px;
+}
+
+.social-1:hover{
+    background-position: -8px -38px;
+}
+
+.social-2:hover{
+    background-position: -95px -38px;
+}
+
+.social-3:hover{
+    background-position: -139px -40px;
+}
+.social-4:hover{
+    background-position: -52px -38px;
+}
+/* END social netwirks STYLE*/
+/* END FOOTER STYLES*/
+/* END INDEX STYLES*/
+
+
+
+/* start catalog page*/
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+/* Product list STYLES*/
+.card-wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    border: 1px solid #eaeaea;
+    padding: 0.8rem;
+    margin: 0.45rem;
+    min-height: 450px;
+    justify-content: space-between;
+}
+
+.card-wrap img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    transition: all 1s ease-out;
+}
+
+.card-wrap img:hover {
+    transform: scale(1.1);
+}
+
+.card-wrap h2 {
+    font-size: 1.5rem;
+}
+
+.card-wrap h2:hover {
+    color: rgb(0, 109, 183);
+}
+
+.card-wrap span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/*END CATALOG PAGE STYLES*/
+
+/* START ITEM PAGE STYLES*/
+/* START Button By STYLES*/
+.button-buy {
+    border: 1px solid rgb(253, 128, 36);
+    background-color: rgb(253, 128, 36);
+    padding: 12px;
+    border-radius: 0.25rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1.2rem;
+    font-size: 18px;
+}
+
+.button-buy:hover {
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* END Button By STYLES*/
+
+/* START PRODUKT PAGE STYLES*/
+.item-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.item-slider-container {
+    width: 35%;
+    padding: 2rem;
+    /* border: 1px solid grey;*/
+}
+
+.item-description {
+    width: 30%;
+    padding: 10px;
+    background: rgb(238, 238, 238);
+}
+
+.item-description span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.item-description .button-buy {
+    max-width: 200px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.item-new {
+    color: rgb(0, 0, 0);
+    width: 50px;
+    font-size: 20px;
+    padding: 5px;
+    background: rgb(255, 207, 0);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-description h2 {
+    font-size: 3rem;
+}
+
+
+/* START slider STYLES*/
+.slide{
+    height: 500px;
+}
+
+.item-slider-container .slic-prev:before,
+.item-slider-container .slic-next:before {
+    color: red;
+    font-size: 2rem;
+}
+
+.item-slider-container .slic-prev {
+    left: -65px;
+}
+
+.item-slider-container .slic-next {
+    right: 50px;
+}
+
+/* END slider STYLES*/
+
+/* START collapsible bar STYLES*/
+.collapsible-header {
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.collapsible li .material-icons {
+    font-size: 2rem;
+}
+
+.collapsible li:nth-child(1) .material-icons {
+    color: goldenrod;
+}
+
+.collapsible li:nth-child(2) .material-icons {
+    color: green;
+}
+
+.collapsible li:nth-child(3) .material-icons {
+    color: red;
+}
+
+/* START video bar STYLES*/
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.collapsible li:nth-child(2) .collapsible-body {
+    text-align: center;
+    background: aliceblue;
+}
+/* END video bar STYLES*/
+/* END collapsible bar STYLES*/
+/* END slider STYLES*/
+/* END ITEM PAGE STYLES*/
+
+/* Start contacts style*/
+
+.contacts-row{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    border: 2px solid black;
+}
+
+.contact-img{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: beige;
+    color: rgb(255, 255, 255);
+    box-shadow: 0, 0, 34px, -5px;
+}
+.contact-img img{
+    width: 100%;
+    min-width: 180px;
+    display: block;
+}
+.contact-info {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: beige;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 109, 183);
+    box-shadow: 0, 0, 34px, -5px;
+}
+.contact-map{
+    width: 50%;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: beige;
+    color: rgb(255, 255, 255);
+    box-shadow: 0, 0, 34px, -5px;
+}
+
+.contacts-title{
+    text-align: center;
+    margin: 0, 25px, 0, 0;
+}
+.contact-phone{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contact-phone i, .contact-phone a, .contact-phone span{
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(255, 207, 0);
+
+}
+.contact-phone a{
+    color: white;
+}
+/* END contacts style*/
+
+/* Start contact FORM styles*/
+
+.contact-fotm-container{
+    background: url(../img/lego-brics.png);
+    background-size: cover;
+    margin-bottom: 10px 60px 60px 60px;
+}
+.contact-fotm-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact-fotm-container i{
+    color: rgb(0, 160, 190);
+
+}
+.contact-fotm-container .btn{
+    background-color: rgb(0, 19, 183);
+    opacity: 0.8    ;
+}
+
+/* Strat cart ctyle*/
+
+#cart{
+    padding: 0 15px;
+}
+#cart li{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#cart li img{
+    margin-right: 20px;
+    max-width: 200px;
+}
+
+.deleteItems{
+    margin-left: 10px;
+    padding: 4px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+#ajax-contact-form{
+    max-width: 250px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.cart-input{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 800px){
+    .contacts-row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .contact-img{
+        display: none;
+    }
+    
+
+    .contact-info{        
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 25px
+    }
+    .contact-map{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    iframe{
+        width: 400px !important;
+    }
+}

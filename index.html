@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+
+    <link rel="shortcut icon" href="./img/icons/LEGO_logo.png">
+    <link rel="stylesheet" type="text/css" href="./slic/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slic/slick-theme.css" />
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/materialize.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+
+
+</head>
+
+<body>
+
+    <!--NAVIGATION PANEL-->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+                <img src="./img/icons/LEGO_logo.png" alt="">
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active"><a href="./index.html">Головна</a></li>
+                <li><a href="./catalog.html">Каталог товарів</a></li>
+                <li><a href="./contacts.html">Контакти</a></li>
+                <li><a href="./company.html">Про компанію</a></li>
+                <li> <a class=" cart-btn btn-floating btn-large  waves-effect waves-light btn modal-trigger" href="#modal1">
+                    <i class="material-icons">local_grocery_store</i> </a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="title">
+        <h1>Інтернет магазин LEGO Shop</h1>
+    </div>
+
+
+    <div class="header-slider">
+        <div class="slide">
+            <img src="./img/40657-Dreamzzz-HS-202308-PS-Hero-Standard-Large.webp" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/75331-Exclusive-202210-PS-Hero-Standard-Large.webp" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/76417-Waterfall-202309-Home-SL-Hero-Standard-Large.webp" alt="">
+        </div>
+    </div>
+
+
+    <ul class="social">
+        <li><a class="social-1" href="https://www.facebook.com/">Facebook</a></li>
+        <li><a class="social-2" href="https://www.youtube.com/">Youtube</a></li>
+        <li><a class="social-3" href="https://www.instagram.com/">Instagram</a></li>
+        <li><a class="social-4" href="https://twitter.com/?lang=uk">Twitter</a></li>
+
+    </ul>
+
+
+    <!--FOOTER-->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2023 Степанов Олександр
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Кошик товарів</h4>
+            <p>Зробити замовлення</p>
+        </div>
+
+        <a href="#!" id="cart-close" class="modal-close waves-effect waves-green btn-flat">Закрити</a>
+        <ul id="cart" class="cart-items">
+
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slic/slick.min.js"></script>
+    <script src="./js/materialize.js"></script>
+    <script src="./js/myscript.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.header-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+            });
+            $('.modal').modal();
+        });
+    </script>
+</body>
+
+</html>
